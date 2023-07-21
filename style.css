@@ -2,15 +2,6 @@
   --second: 1s;
   --minute: calc(var(--second) * 70);
 }
-
-@keyframes tick {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-100%);
-  }
-}
 body {
   background: lightskyblue;
   width: 100vw;
@@ -258,6 +249,16 @@ body {
 #game-over:hover {
   display: flex;
 }
+
+@keyframes tick {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
 .Board {
   width: 150px;
   height: 50px;
